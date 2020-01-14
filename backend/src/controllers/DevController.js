@@ -69,5 +69,13 @@ module.exports = {
     );
 
     return response.json(dev);
+  },
+
+  async destroy(request, response) {
+    const { devId } = request.params;
+
+    await Dev.findByIdAndDelete(devId);
+
+    return response.json();
   }
 };
