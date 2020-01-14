@@ -40,5 +40,34 @@ module.exports = {
     }
 
     return response.json(dev);
+  },
+
+  async update(request, response) {
+    const { devId } = request.params;
+    const { name, avatar_url, bio, techs, latitude, longitude } = request.body;
+
+    const updateDev = {};
+
+    if (name) updateDev.name = name;
+    if (avatar_url) updateDev.avatar_url = avatar_url;
+    if (bio) updateDev.bio = bio;
+    if (techs) updateDev.techs = parseStringAsArray(techs);
+    if (latitude && longitude)
+      updateDev.location = {
+        type: "Point",
+        coordinates: [longitude, latitude]
+      };
+
+    const dev = await Dev.findByIdAndUpdate(
+      devId,
+      {
+        $set: updateDev
+      },
+      {
+        new: true
+      }
+    );
+
+    return response.json(dev);
   }
 };
