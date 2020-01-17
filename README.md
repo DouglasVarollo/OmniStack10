@@ -26,7 +26,7 @@ Para executar o frontend siga as instruções do arquivo [README.md](https://git
 Para executar o mobile siga as instruções do arquivo [README.md](https://github.com/DouglasVarollo/OmniStack10/blob/master/mobile/README.md) que está na pasta mobile.
 
 <p align="center">
-  <img src="./.github/expo01.jpg" width="300" />
-  <img src="./.github/expo02.jpg" width="300" />
-  <img src="./.github/expo03.jpg" width="300" />
+  <img src="./.github/expo01.jpg" width="250" />
+  <img src="./.github/expo02.jpg" width="250" />
+  <img src="./.github/expo03.jpg" width="250" />
 </p>
