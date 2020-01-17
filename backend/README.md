@@ -6,9 +6,11 @@
 ## Dependências
 
 - [axios](https://yarnpkg.com/en/package/axios)
+- [cors](https://yarnpkg.com/en/package/cors)
 - [dotenv](https://yarnpkg.com/en/package/dotenv)
 - [express](https://yarnpkg.com/en/package/express)
 - [mongoose](https://yarnpkg.com/en/package/mongoose)
+- [socket.io](https://yarnpkg.com/en/package/socket.io)
 
 ## Como iniciar
 
